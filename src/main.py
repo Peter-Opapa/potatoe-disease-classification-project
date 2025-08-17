@@ -36,9 +36,9 @@ async def home():
     return FileResponse("templates/home.html")
 
 # ---------- API ----------
-@app.get("/ping")
-async def ping():
-    return {"message": "Hello, I am alive"}
+@app.get("/")
+def root():
+    return {"message": "Hello from Render!"}
 
 def read_file_as_image(data) -> np.ndarray:
     img = Image.open(BytesIO(data)).convert("RGB").resize((256, 256))
