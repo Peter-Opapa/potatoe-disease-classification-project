@@ -33,7 +33,7 @@ app.mount("/images", StaticFiles(directory="images"), name="images")
 
 @app.get("/")
 async def home():
-    return FileResponse("frontend/home.html")
+    return FileResponse("templates/home.html")
 
 # ---------- API ----------
 @app.get("/ping")
