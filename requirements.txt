@@ -1,6 +1,6 @@
 tensorflow==2.20.0
 fastapi
-gunicorn
-python-multipart
+uvicorn[standard] 
+gunicorn           
+python-multipart    
 matplotlib
-numpy
